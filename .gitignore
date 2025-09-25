@@ -1,0 +1,33 @@
+
+# Notebooks checkpoints
+*.Prediction_de_Series_Temporelles.ipynb/
+
+
+# Datasets
+data/
+iot_telemetry_data/
+Version_2_iot_telemetry_data/
+Version_2_artifacts/
+
+# Images volumineuses
+*.png
+*.jpg
+*.jpeg
+
+# Modèles de deep learning
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.onnx
+*.pb
+
+# Environnements
+.env
+.venv/
+env/
+venv/
+
+# IDE / Éditeurs
+.vscode/
+.idea/
