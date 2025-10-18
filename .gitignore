@@ -7,7 +7,8 @@
 data/
 iot_telemetry_data/
 Version_2_iot_telemetry_data/
-Version_2_artifacts/
+Version_3_iot_telemetry_data
+# Version_2_artifacts/
 
 # Images volumineuses
 *.png
