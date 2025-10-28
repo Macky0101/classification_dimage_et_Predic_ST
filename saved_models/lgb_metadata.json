@@ -1,0 +1,289 @@
+{
+  "model_type": "LightGBM Ensemble",
+  "training_date": "2025-10-28T13:23:36.220316",
+  "model_parameters": {
+    "n_estimators": 200,
+    "learning_rate": 0.1,
+    "max_depth": 8,
+    "num_leaves": 31,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.1,
+    "reg_lambda": 0.1,
+    "random_state": 42,
+    "n_jobs": -1,
+    "verbosity": -1
+  },
+  "data_info": {
+    "window_size": 168,
+    "horizon": 24,
+    "num_features": 47,
+    "num_targets": 12,
+    "train_samples": 48906,
+    "test_samples": 10481
+  },
+  "feature_columns": [
+    "temp",
+    "humidity",
+    "co",
+    "lpg",
+    "smoke",
+    "nh3",
+    "motion",
+    "light",
+    "hour_sin",
+    "hour_cos",
+    "month_sin",
+    "month_cos",
+    "temp_lag_1",
+    "humidity_lag_1",
+    "nh3_lag_1",
+    "co_lag_1",
+    "temp_lag_2",
+    "humidity_lag_2",
+    "nh3_lag_2",
+    "co_lag_2",
+    "temp_lag_3",
+    "humidity_lag_3",
+    "nh3_lag_3",
+    "co_lag_3",
+    "temp_lag_6",
+    "humidity_lag_6",
+    "nh3_lag_6",
+    "co_lag_6",
+    "temp_lag_12",
+    "humidity_lag_12",
+    "nh3_lag_12",
+    "co_lag_12",
+    "temp_lag_24",
+    "humidity_lag_24",
+    "nh3_lag_24",
+    "co_lag_24",
+    "temp_rolling_mean_6",
+    "temp_rolling_std_6",
+    "humidity_rolling_mean_6",
+    "temp_rolling_mean_12",
+    "temp_rolling_std_12",
+    "humidity_rolling_mean_12",
+    "temp_rolling_mean_24",
+    "temp_rolling_std_24",
+    "humidity_rolling_mean_24",
+    "temp_humidity_interaction",
+    "nh3_co_ratio"
+  ],
+  "target_names": [
+    "temp_1h",
+    "humidity_1h",
+    "nh3_1h",
+    "co_1h",
+    "temp_6h",
+    "humidity_6h",
+    "nh3_6h",
+    "co_6h",
+    "temp_24h",
+    "humidity_24h",
+    "nh3_24h",
+    "co_24h"
+  ],
+  "performance": {
+    "temp_1h": {
+      "MAE": 0.7074696346293102,
+      "RMSE": 0.8901111218730742,
+      "MAPE": 3.2887267073132778
+    },
+    "humidity_1h": {
+      "MAE": 2.037392282364831,
+      "RMSE": 2.532804459298761,
+      "MAPE": 3.7066431260264063
+    },
+    "nh3_1h": {
+      "MAE": 0.0019786014178031475,
+      "RMSE": 0.0024948344281788396,
+      "MAPE": 43851.71269032005
+    },
+    "co_1h": {
+      "MAE": 0.001469895140553544,
+      "RMSE": 0.0018807347484710829,
+      "MAPE": 167.44429715012677
+    },
+    "temp_6h": {
+      "MAE": 0.7363626632301349,
+      "RMSE": 0.9267342465860983,
+      "MAPE": 3.419307917608403
+    },
+    "temp_24h": {
+      "MAE": 0.7493072840155045,
+      "RMSE": 0.9374153415862881,
+      "MAPE": 3.481796237438367
+    }
+  },
+  "training_history": {
+    "temp_1h": {
+      "best_iteration": 42,
+      "best_score": {
+        "valid_0": {
+          "l1": 0.7180203244317603,
+          "l2": 0.8285144271338124
+        }
+      }
+    },
+    "humidity_1h": {
+      "best_iteration": 41,
+      "best_score": {
+        "valid_0": {
+          "l1": 2.0631848153131465,
+          "l2": 6.6561213038952705
+        }
+      }
+    },
+    "nh3_1h": {
+      "best_iteration": 79,
+      "best_score": {
+        "valid_0": {
+          "l1": 0.0019939708442695426,
+          "l2": 6.246697620698444e-06
+        }
+      }
+    },
+    "co_1h": {
+      "best_iteration": 48,
+      "best_score": {
+        "valid_0": {
+          "l1": 0.001538839059754464,
+          "l2": 4.057346779445087e-06
+        }
+      }
+    },
+    "temp_6h": {
+      "best_iteration": 50,
+      "best_score": {
+        "valid_0": {
+          "l1": 0.7345255184828637,
+          "l2": 0.871171506750589
+        }
+      }
+    },
+    "humidity_6h": {
+      "best_iteration": 45,
+      "best_score": {
+        "valid_0": {
+          "l1": 2.064439047540146,
+          "l2": 6.650705666964455
+        }
+      }
+    },
+    "nh3_6h": {
+      "best_iteration": 72,
+      "best_score": {
+        "valid_0": {
+          "l1": 0.0020091040628449092,
+          "l2": 6.35805046138786e-06
+        }
+      }
+    },
+    "co_6h": {
+      "best_iteration": 62,
+      "best_score": {
+        "valid_0": {
+          "l1": 0.0015667764934717363,
+          "l2": 4.194742091541746e-06
+        }
+      }
+    },
+    "temp_24h": {
+      "best_iteration": 38,
+      "best_score": {
+        "valid_0": {
+          "l1": 0.7395402558142049,
+          "l2": 0.8725813143022761
+        }
+      }
+    },
+    "humidity_24h": {
+      "best_iteration": 40,
+      "best_score": {
+        "valid_0": {
+          "l1": 2.0690983743406934,
+          "l2": 6.658917021026536
+        }
+      }
+    },
+    "nh3_24h": {
+      "best_iteration": 56,
+      "best_score": {
+        "valid_0": {
+          "l1": 0.0020263964659244836,
+          "l2": 6.478867881015589e-06
+        }
+      }
+    },
+    "co_24h": {
+      "best_iteration": 47,
+      "best_score": {
+        "valid_0": {
+          "l1": 0.0015659838831182456,
+          "l2": 4.1847316962822455e-06
+        }
+      }
+    }
+  },
+  "baseline_comparison": {
+    "temp_1h": {
+      "baseline_mae": 0.9142381452151513,
+      "lgb_mae": 0.7074696346293102,
+      "improvement": 22.616482550854563
+    },
+    "temp_6h": {
+      "baseline_mae": 2.5805457494513884,
+      "lgb_mae": 0.7363626632301349,
+      "improvement": 71.4648475661909
+    },
+    "temp_24h": {
+      "baseline_mae": 0.9659087873294534,
+      "lgb_mae": 0.7493072840155045,
+      "improvement": 22.42463327337659
+    }
+  },
+  "top_features": [
+    {
+      "feature": "t-0_temp",
+      "importance": 31.916666666666668
+    },
+    {
+      "feature": "t-164_hour_sin",
+      "importance": 14.75
+    },
+    {
+      "feature": "t-164_hour_cos",
+      "importance": 12.833333333333334
+    },
+    {
+      "feature": "t-167_month_cos",
+      "importance": 8.0
+    },
+    {
+      "feature": "t-0_humidity",
+      "importance": 7.333333333333333
+    },
+    {
+      "feature": "t-163_hour_cos",
+      "importance": 7.166666666666667
+    },
+    {
+      "feature": "t-0_nh3",
+      "importance": 5.916666666666667
+    },
+    {
+      "feature": "t-167_temp_rolling_mean_24",
+      "importance": 5.666666666666667
+    },
+    {
+      "feature": "t-3_nh3",
+      "importance": 5.5
+    },
+    {
+      "feature": "t-167_humidity_lag_24",
+      "importance": 5.333333333333333
+    }
+  ]
+}
