@@ -1,0 +1,17 @@
+{
+  "model_name": "CNN-BiLSTM-Attention",
+  "conversion_quality": "Excellent",
+  "performance_metrics": {
+    "original_mae": 0.7345711124880308,
+    "original_r2": 0.17967105551325666,
+    "mobile_mae": 0.7376390432071442,
+    "mobile_r2": 0.17827256709959804,
+    "mae_change_percent": 0.417649246881251,
+    "r2_change_percent": -0.778360437446991
+  },
+  "technical_specs": {
+    "model_size_mb": 0.2713775634765625,
+    "inference_time_ms": 19.63200092315674,
+    "predictions_per_second": 50.937242918548336
+  }
+}

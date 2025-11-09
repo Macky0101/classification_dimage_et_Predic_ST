@@ -1,0 +1,20 @@
+{
+  "model_type": "CNN-BiLSTM-Attention Hybrid",
+  "training_date": "2025-11-04T15:42:26.099024",
+  "input_shape": [
+    168,
+    47
+  ],
+  "output_shape": 12,
+  "performance": {
+    "mae": 0.7126212885722234,
+    "rmse": 1.3853893317131833,
+    "r2": 0.4456573207546573
+  },
+  "training_parameters": {
+    "epochs_trained": 45,
+    "best_epoch": 30,
+    "final_loss": 2.9363346099853516,
+    "final_val_loss": 2.045186758041382
+  }
+}

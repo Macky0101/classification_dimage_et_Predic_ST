@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-11-04T23:05:15.609063",
+  "models_trained": [
+    "GRU",
+    "CNN-LSTM",
+    "Transformer",
+    "CNN-BiLSTM-Attention"
+  ],
+  "performance_metrics": {
+    "GRU": {
+      "mae": 0.6994559661352753,
+      "rmse": 1.3497058916802698,
+      "r2": -0.83589545797585
+    },
+    "CNN-LSTM": {
+      "mae": 0.6946329998391866,
+      "rmse": 1.346925254503778,
+      "r2": -0.10690557825374712
+    },
+    "Transformer": {
+      "mae": 1.3146588509582786,
+      "rmse": 2.301430804655292,
+      "r2": -0.03004078410906738
+    },
+    "CNN-BiLSTM-Attention": {
+      "mae": 0.7063861638846713,
+      "rmse": 1.3635139872543933,
+      "r2": 0.3270903983349523
+    }
+  },
+  "data_info": {
+    "train_samples": 48906,
+    "test_samples": 10481,
+    "window_size": 168,
+    "num_features": 47,
+    "num_targets": 12
+  }
+}
